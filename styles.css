@@ -1067,6 +1067,78 @@ p { margin: 0 0 1em; }
 .tier__note strong { color: var(--c-red); font-style: normal; }
 
 /* =========================================================
+   §— SOUL (Outlaws, Dos a Cero, Pantheon, 1994 effect, Pochettino, Hershey kid)
+   ========================================================= */
+.soul__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  margin-top: var(--sp-7);
+}
+@media (min-width: 720px) { .soul__grid { grid-template-columns: repeat(2, 1fr); } }
+
+.soul-card {
+  position: relative;
+  background: var(--c-white);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: var(--r-3);
+  padding: var(--sp-5);
+  padding-top: calc(var(--sp-5) + 2.25rem);
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease);
+}
+.soul-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 40px -20px rgba(10, 35, 81, 0.20);
+}
+.soul-card__num {
+  position: absolute;
+  top: var(--sp-3);
+  left: var(--sp-5);
+  font-family: var(--f-display);
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--c-red);
+  letter-spacing: 0.02em;
+}
+.soul-card h3 {
+  font-family: var(--f-display);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--c-black);
+  margin-bottom: var(--sp-1);
+}
+.soul-card__sub {
+  font-family: var(--f-mono);
+  font-size: var(--fs-tiny);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-red);
+  margin-bottom: var(--sp-3);
+}
+.soul-card p {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--t-on-cream);
+  margin-bottom: var(--sp-3);
+}
+.soul-card p:last-child { margin-bottom: 0; }
+.pantheon {
+  display: grid;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-3);
+}
+.pantheon li {
+  padding: var(--sp-3);
+  background: rgba(191, 10, 48, 0.05);
+  border-left: 3px solid var(--c-red);
+  border-radius: var(--r-2);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.pantheon strong { color: var(--c-black); display: block; margin-bottom: 0.2em; }
+
+/* =========================================================
    §05 — MATCHES
    ========================================================= */
 .matches__list {
