@@ -1519,22 +1519,35 @@ p { margin: 0 0 1em; }
   border-bottom: 4px solid var(--c-red);
 }
 
-/* 2026 — TBD/forthcoming */
-.kit__shirt--26 {
-  background:
-    linear-gradient(135deg, var(--c-navy) 0%, var(--c-red) 100%);
-  position: relative;
+/* 2026 Home — The Wave (wavy red/white stripes, callback to 2012 hoops) */
+.kit__shirt--26-home {
+  background-color: #fff;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 130' preserveAspectRatio='none'><path d='M0 12 Q25 4 50 12 T100 12 L100 26 Q75 18 50 26 T0 26 Z' fill='%23BF0A30'/><path d='M0 40 Q25 32 50 40 T100 40 L100 54 Q75 46 50 54 T0 54 Z' fill='%23BF0A30'/><path d='M0 68 Q25 60 50 68 T100 68 L100 82 Q75 74 50 82 T0 82 Z' fill='%23BF0A30'/><path d='M0 96 Q25 88 50 96 T100 96 L100 110 Q75 102 50 110 T0 110 Z' fill='%23BF0A30'/></svg>");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
-.kit__shirt--26::after {
-  content: "★";
-  position: absolute;
-  top: 25%; left: 50%; transform: translateX(-50%);
-  color: var(--c-yellow);
-  font-size: 1.75rem;
-  text-shadow: 0 0 12px rgba(255,217,61,0.8);
+.kit__shirt--26-home .kit__crest { color: rgba(0,0,0,0.55); }
+
+/* 2026 Away — The Stars (navy with subtle vertical-line star pattern) */
+.kit__shirt--26-away {
+  background-color: var(--c-navy);
+  background-image:
+    radial-gradient(circle at 22% 15%, rgba(255,255,255,0.22) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 22% 33%, rgba(255,255,255,0.16) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 22% 51%, rgba(255,255,255,0.22) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 22% 69%, rgba(255,255,255,0.16) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 22% 87%, rgba(255,255,255,0.22) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 50% 24%, rgba(255,255,255,0.18) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 50% 42%, rgba(255,255,255,0.20) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 50% 60%, rgba(255,255,255,0.18) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 50% 78%, rgba(255,255,255,0.20) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 78% 15%, rgba(255,255,255,0.22) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 78% 33%, rgba(255,255,255,0.16) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 78% 51%, rgba(255,255,255,0.22) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 78% 69%, rgba(255,255,255,0.16) 0 1.4px, transparent 1.6px),
+    radial-gradient(circle at 78% 87%, rgba(255,255,255,0.22) 0 1.4px, transparent 1.6px);
 }
-.kit__shirt--26 + .kit__crest,
-.kit__shirt--26 .kit__crest { color: var(--c-cream); }
+.kit__shirt--26-away .kit__crest { color: rgba(255,255,255,0.55); text-shadow: none; }
 
 .kit__body { display: flex; flex-direction: column; }
 .kit__year {
