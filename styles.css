@@ -1054,6 +1054,17 @@ p { margin: 0 0 1em; }
 @media (min-width: 720px) {
   .tier__list--two { grid-template-columns: 1fr 1fr; column-gap: var(--sp-6); }
 }
+.tier__note {
+  margin-top: var(--sp-3);
+  padding: var(--sp-3) var(--sp-4);
+  background: rgba(191, 10, 48, 0.06);
+  border-left: 3px solid var(--c-red);
+  border-radius: var(--r-2);
+  font-size: 0.875rem;
+  color: var(--t-on-cream);
+  font-style: italic;
+}
+.tier__note strong { color: var(--c-red); font-style: normal; }
 
 /* =========================================================
    §05 — MATCHES
