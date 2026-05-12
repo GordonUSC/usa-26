@@ -1926,3 +1926,84 @@ p { margin: 0 0 1em; }
   color: rgba(255, 255, 255, 0.8);
   margin-top: var(--sp-5);
 }
+
+/* ===== News Watch (May 11 update block) ===== */
+.news-watch {
+  background: var(--c-cream);
+  border-top: 4px solid var(--c-ink);
+  border-bottom: 4px solid var(--c-ink);
+  padding-top: var(--sp-8);
+  padding-bottom: var(--sp-8);
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--sp-5);
+  margin-top: var(--sp-6);
+}
+.news-card {
+  background: var(--c-white);
+  border: 1.5px solid rgba(20,20,15,0.12);
+  border-radius: var(--r-3);
+  padding: var(--sp-5);
+  position: relative;
+  transition: transform 200ms ease, border-color 200ms ease;
+}
+.news-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--c-ink);
+}
+.news-card__kicker {
+  font-family: var(--f-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(20,20,15,0.55);
+  margin-bottom: var(--sp-3);
+}
+.news-card h3 {
+  font-family: var(--f-display);
+  font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+  letter-spacing: 0.005em;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: var(--sp-3);
+  color: var(--c-ink);
+}
+.news-card p {
+  font-size: 0.96rem;
+  line-height: 1.55;
+  color: rgba(20,20,15,0.85);
+}
+.news-card p + p { margin-top: var(--sp-3); }
+.news-card--alert {
+  border-left: 6px solid var(--c-yellow);
+  background: linear-gradient(180deg, rgba(255,217,61,0.08), transparent 40%);
+}
+.news-card--out {
+  border-left: 6px solid var(--c-red);
+  background: linear-gradient(180deg, rgba(191,10,48,0.05), transparent 40%);
+}
+.news-card--good {
+  border-left: 6px solid #1B6B3A;
+  background: linear-gradient(180deg, rgba(27,107,58,0.06), transparent 40%);
+}
+.news-card--alert .news-card__kicker { color: #8a6500; }
+.news-card--out .news-card__kicker { color: var(--c-red); }
+.news-card--good .news-card__kicker { color: #1B6B3A; }
+.news-foot {
+  margin-top: var(--sp-6);
+  font-family: var(--f-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.04em;
+  color: rgba(20,20,15,0.6);
+  border-top: 1px dashed rgba(20,20,15,0.25);
+  padding-top: var(--sp-4);
+}
+.news-foot a {
+  color: var(--c-red);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--c-red);
+}
+.news-foot a:hover { background: var(--c-yellow); }
